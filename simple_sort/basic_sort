@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2018/8/24 08:59
+# @Author  : wangzijun
+# @File    : __init__.py.py
+from simple_sort.utils import swap
+
+
+def selection_sort(lyst):
+    pass
+
+
+def insertion_sort(lyst):
+    pass
+
+
+def bubble_sort(lyst):
+    n = len(lyst)
+    while n > 1:
+        i = 1
+        while i < n:
+            if lyst[i] < lyst[i - 1]:
+                swap(lyst, i, i - 1)
+            i += 1
+        n -= 1
+
+
+def bubble_sort_v2(lyst):
+    pass
+
+
+def bubble_sort_v3(lyst):
+    pass
+
+
+def cocktail_sort(lyst):
+    """
+    鸡尾酒排序
+    :param lyst:
+    :return:
+    """
+    pass
