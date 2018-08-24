@@ -2,12 +2,14 @@
 Implementing algorithms and data structures in python  
 `数据结构与算法的python实现`
 
-##Search
+## Search
+`搜索算法`
 * Search for min `最小值查找`
 * Sequential search `顺序查找`
 * Binary search `二分查找`
 
-##Sort
+## Sort
+`排序算法`
 * Simple sort  `简单排序`
     * Selection sort `选择排序`
     * Insert sort `插入排序`
