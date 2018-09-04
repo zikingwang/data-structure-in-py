@@ -6,7 +6,26 @@ from simple_sort.utils import swap
 
 
 def selection_sort(lyst):
-    pass
+    """
+    选择排序
+    :param lyst:
+    :return:
+    """
+    # 找出i~len(lyst)中的最小项:
+    # 初始化min_index = i
+    # 循环i~len(lyst)
+    # 如果有比min_index小的
+    # 与i位置的项交换
+    for i in range(len(lyst)-1):
+        min_index = i
+        for j in range(i+1, len(lyst)-1):
+            if lyst[j] < lyst[min_index]:
+                min_index = j
+            else:
+                continue
+        if min_index != i:
+            swap(lyst, min_index, i)
+        print(lyst)
 
 
 def insertion_sort(lyst):
@@ -25,7 +44,12 @@ def bubble_sort(lyst):
 
 
 def bubble_sort_v2(lyst):
-    pass
+    n = len(lyst)
+    while n > 1:
+        i = 1
+        while i < n:
+            if lyst[i] < lyst[i - 1]:
+                pass
 
 
 def bubble_sort_v3(lyst):
@@ -39,3 +63,13 @@ def cocktail_sort(lyst):
     :return:
     """
     pass
+
+
+def main():
+    lyst = [3, 5, 7, 1, 2, 3, 1, 0, 9]
+    bubble_sort(lyst)
+    print(lyst)
+
+
+if __name__ == "__main__":
+    main()
